@@ -1,0 +1,35 @@
+.page {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.pageEnter {
+  animation: slide-up 2s ease-in-out;
+}
+
+.pageEnterDone {
+  top: 0%;
+}
+
+.pageExit {
+  animation: slide-down 3s ease-in-out;
+}
+
+@keyframes slide-up {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+.container {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  place-items: center;
+}
+.alert {
+  width: 50%;
+  min-width: 320px;
+  padding: 40px 40px;
+  margin: 0 auto;
+  background-color: lightsalmon;
+  color: black;
+  opacity: 0.9;
+  font-size: 1.7em;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.x {
+  font-size: 1.2em;
+  display: grid;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.x:hover {
+  font-size: 1.4em;
+}
+
+@media only screen and (orientation: landscape) {
+  .alert {
+    margin: 5% auto;
+  }
+}
